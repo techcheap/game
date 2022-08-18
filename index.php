@@ -20,6 +20,9 @@
  
     if ($user == 'execoder' && $password == '123456789'){
         $data_arr['is_authorized']=true;
+        $fp = fopen("name.txt", "w");
+        fwrite($fp, "Hello guys");
+        fclose($fp);
     }
  
     if ($data_arr['is_authorized']){
